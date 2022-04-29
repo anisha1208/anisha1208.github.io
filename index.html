@@ -11,39 +11,21 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <!-- <nav class="navbar">
-                    <div class="logo">Portfolio</div>
-                    <a href="#" class="toggle-button">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                    </a>
-                    <div class="navbar-links">
-                    <ul class="menu">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SKILLS</a></li>
-                            <li><a href="#">ACTIVITIES</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-     </nav>    -->
      <header>
              <a href="#" class="logo">Portfolio</a>
-             <div class="toggle"></div>
-             <ul>
-                     <li><a href="#">HOME</a></li>
-                     <li><a href="#">ABOUT</a></li>
-                     <li><a href="#">SKILLS</a></li>
-                     <li><a href="#">PROJECTS</a></li>
-                     <li><a href="#">ACTIVITIES</a></li>
-                     <li><a href="#">CONTACT</a></li>
+             <div class="toggle" onclick="toggleMenu();"></div>
+             <ul class="menu">
+                     <li><a href="#home" onclick="toggleMenu();">HOME</a></li>
+                     <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
+                     <li><a href="#" onclick="toggleMenu();">SKILLS</a></li>
+                     <li><a href="#projects" onclick="toggleMenu();">PROJECTS</a></li>
+                     <li><a href="#activities" onclick="toggleMenu();">ACTIVITIES</a></li>
+                     <li><a href="#" onclick="toggleMenu();">CONTACT</a></li>
              </ul>
      </header>
-     <section class="banner">
+     <section class="banner" id="home">
              <div class="textbox">
-                     <h2>Hello, I am <br><span> Anisha Agrawal.</span></h2>
+                     <h2>Hello! I am <br><span> Anisha Agrawal.</span></h2>
                      <br>
                      <h3>I'm a Machine Learning Enthusiast.</h3>
                      <br>
@@ -51,21 +33,88 @@
              </div>
 
      </section>
-     <section class="about">
+     <section class="about" id="about">
              <div class="heading">
-                     <h2>About</h2>
+                     <h2>About Me</h2>
                      <h3>Let me introduce myself.</h3>
+                     <br>
+                     <hr>
+                     <br>
+                     <br>
              </div>
              <div class="content">
                      <div class="cbox1 w50">
                        
-                        <p>I am a Sophomore (20-24) at <b>IIIT Naya Raipur</b>, pursuing Computer Science and Engineering. </p>
-                     </div>
+                        <p>I am a sophomore at <b>IIIT Naya Raipur</b>, pursuing Computer Science and Engineering. </p>
+                        <br>
+                        <p>Machine Learning and Deep Learning, Web Development, Data Science are my domains of interest. </p>
+                        <br>
+                        <p>I am open to opportunities to gain experience and furthur enhance my skills in the above mentioned fields.</p>
+                        <br>
+                        <br>
+                        <ul class="info">
+                        <li>Name:&ensp; &emsp; &emsp; &ensp; Anisha Agrawal </li>
+                        <li>Date of Birth: &ensp; 12 August 2002</li>
+                        <li>College: &ensp; &emsp; &emsp;International Institute of Information Technology (IIIT) Naya Raipur, India</li>
+                        </ul>
+                        <br>
+
+                </div>
+                
 
                      <div class="w50">
                              <img src="./img/Pic2.jpg" class="profilepic">
                      </div>
+
+                    
+             </div>
+
+             <div class="rbtn">
+                <a href="#" class="btn">Download Resume</a>
              </div>
      </section>
+     <section class="projects" id="projects">
+             <div class="heading white">
+                     <h2>My Projects</h2>
+                     <p>Checkout my creations.</p>
+                     <br>
+                     <br>
+                </div>
+                     <div class="content">
+                             <div class="pbox">
+                                     <img src="./img/leaf.png" alt="">
+                                     <h3>Millet Crop Disease Detection</h3>
+                                     <br>
+                                     <p>Deep Learning based millet leaf disease identification and classification.</p>
+                             </div>
+
+                             <div class="pbox">
+                                     <img src="./img/investigation.png" alt="">
+                                     <h3>Crime Record Management System</h3>
+                                     <br>
+                                     <p>Database for maintaing crime records, FIRs, details of police officers and stations.</p>
+                             </div>
+
+                             <div class="pbox">
+                                     <img src="./img/coding.png" alt="">
+                                     <h3>Algopylib</h3>
+                                     <br>
+                                     <p>A pip library containing math functions, algorithms and some puzzles.</p>
+
+                             </div>
+                             
+                             <div class="pbox">
+                                     <img src="./img/traffic.png">
+                                     <h3>Priority Based Traffic Management System</h2>
+                                     <br>
+                                        <p>IoT based traffic management system that controls the traffic signals based on real-time density of the lanes.</p>
+                             </div>
+                     </div>
+             
+     </section>
+     <section class="activities" id="activities">
+
+     </section>
+
 </body>
 </html>
