@@ -16,3 +16,10 @@ function toggleMenu(){
         menuToggle.classList.toggle('active');
         menu.classList.toggle('active');
 }
+
+var typed = new Typed(".autotype",{
+        strings:["Machine Learning Enthusiast","Web Developer", "Software Developer"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true
+})
