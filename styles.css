@@ -80,6 +80,11 @@ section{
         font-weight: 450;
 }
 
+.btn:hover{
+        background-color: white;
+        color: #277da1;
+}
+
 header{
         position: fixed;
         top: 0;
@@ -210,6 +215,12 @@ header.sticky ul li a{
         letter-spacing: 2px;
         font-weight: 250;
 }
+
+.rbtn .btn:hover{
+        background-color: rgb(0, 0, 0);
+        color: #89cfee;
+}
+
 
 .heading.white{
         color: #fff;
