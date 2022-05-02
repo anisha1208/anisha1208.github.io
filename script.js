@@ -18,7 +18,7 @@ function toggleMenu(){
 }
 
 var typed = new Typed(".autotype",{
-        strings:["Machine Learning Enthusiast","Web Developer", "Software Developer"],
+        strings:["Machine Learning Enthusiast","Web Developer", "Software Developer" , "Learner"],
         typeSpeed:100,
         backSpeed:100,
         loop:true
