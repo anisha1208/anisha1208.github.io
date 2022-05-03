@@ -143,6 +143,12 @@ header ul li a{
 header.sticky ul li a{
         color: #111;
 }
+
+.nav li.active a{
+        color: rgb(38, 125, 132);
+      }
+      
+
 .heading{
         width: 100%;
         text-align: center;
@@ -156,13 +162,14 @@ header.sticky ul li a{
         font-weight: 1200;
        
 }
+
 .about .heading h2{
         text-shadow: 0 12px 6px #dcd9d4,0 -2px 1px #fff;
 }
 
-.projects .heading h2{
-        text-shadow: 0 12px 6px #4f4f4d,0 -2px 1px rgb(14, 13, 13);
-}
+/* .projects .heading h2{
+        text-shadow: 0 12px 6px #5b5959,0 -2px 1px rgb(14, 13, 13);
+} */
 
 .heading hr{
         width:25%;
@@ -258,6 +265,15 @@ header.sticky ul li a{
         color: #89cfee;
 }
 
+.idk{
+        width:50%;
+        margin:auto;
+        background-color:#c7c7c7;
+        height: 2px;
+        border: none;
+        margin-bottom: 20px;    
+}
+
 .timeline h1{
         font-size: 40px;
         font-weight: 800;  
@@ -266,6 +282,7 @@ header.sticky ul li a{
         margin-bottom: 30px; */
 }
 
+
 .timeline{
         min-height: 100vh;
         width: 100%;
@@ -273,6 +290,9 @@ header.sticky ul li a{
         align-items: center;
         justify-content: center;
         padding: 100px 0;
+        background-image: linear-gradient(to bottom, #ffffff, #f4f4f4, #e9e9e9, #dedede, #d3d3d3);
+        /* background-image: linear-gradient(to bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5); */
+        
         
 }
 
@@ -299,6 +319,7 @@ header.sticky ul li a{
 .wrapper ul li:last-child{
         margin-bottom: 0;
 }
+
 
 .tc h2{
         font-size: 23px;
@@ -330,6 +351,170 @@ header.sticky ul li a{
         color: #fff;
 }
 
+.skills{
+        /* background-color: #157a99; */
+        background-image: linear-gradient(to bottom, #006274, #046c81, #0a778f, #11819d, #198cac);
+        width: 100%;
+        height: auto;
+        padding: 80px 13%;
+        /* background-color: rgba(0,0,0,0.080); */
+}
+/* .skills .heading h2{
+        text-shadow: 0 10px 6px #525a6d,0 -2px 1px rgb(107, 107, 107);
+} */
+
+.skills hr{
+        width:25%;
+        margin:auto;
+        background-color:#000000;
+        height: 6px;
+        border: none;
+        margin-bottom: 20px;
+}
+
+.skills .row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap:50px;
+        grid-row-gap:20px;
+}
+
+.skills .item .in{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+}
+
+.progress{
+        width: 100%;
+        height:10px;
+        position: relative;
+        background-color: rgb(160, 160, 160);
+        border-radius: 25px;
+        margin-top:5px ;
+}
+
+.progress span{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color:rgb(33, 32, 32) ;
+        border-radius: 25px;
+}
+
+.progress .cpp{
+        width:80%;
+        animation: cpp 3s;
+}
+
+@keyframes cpp{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 80%;
+        }
+}
+
+.progress .py{
+        width:85%;
+        animation: py 3s;
+}
+
+@keyframes py{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 85%;
+        }
+}
+
+.progress .java{
+        width:65%;
+        animation: java 3s;
+}
+
+@keyframes java{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 65%;
+        }
+}
+
+.progress .ml{
+        width:85%;
+        animation: ml 3s;
+}
+
+@keyframes ml{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 85%;
+        }
+}
+
+.progress .html{
+        width:90%;
+        animation: html 3s;
+}
+
+@keyframes html{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 90%;
+        }
+}
+
+.progress .db{
+        width:80%;
+        animation: db 3s;
+}
+
+@keyframes db{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 80%;
+        }
+}
+
+.progress .dl{
+        width:80%;
+        animation: dl 3s;
+}
+
+@keyframes dl{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 80%;
+        }
+}
+
+.progress .gd{
+        width:75%;
+        animation: gd 3s;
+}
+
+@keyframes gd{
+        0%{
+                width:0;
+        }
+        100%{
+                width: 75%;
+        }
+}
+
 .projects{
         background: black;
 }
@@ -357,6 +542,11 @@ header.sticky ul li a{
         margin: 20px;
         text-align: center;
         transition: 0.5s;
+        border-radius: 15px;
+        /* box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.168),
+                15px 15px 15px rgba(0,0,0,0.1); */
+                /* inset -50px -50px 50px rgba(255, 255, 255, 0.2),
+                inset 50px 50px 50px rgba(0,0,0,0.1); */
 }
 
 .projects .content .pbox:hover{
@@ -390,6 +580,34 @@ header.sticky ul li a{
 
 .pbox .ic a:hover{
         color:#000000;
+}
+
+.contact{
+   background-color: rgba(0,0,0,0.080);     
+}
+
+.contact .rows{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+        grid-gap:1.5rem;
+        margin-top: 4rem;
+}
+
+.contact .rows .entry{
+        text-align: center;
+        padding: 20px 30px;
+}
+
+.contact p{
+        color: #377c99;
+}
+
+.contact a{
+        color:#34cde1;
+}
+
+.contact a:hover{
+        color:#111
 }
 
 @media only screen and (min-width:768px){
@@ -564,6 +782,19 @@ header.sticky ul li a{
                 align-items: center;
                 justify-content: center;
                 
+        }
+        .skills .row{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-column-gap:50px;
+                grid-row-gap:20px;
+        }
+
+        .heading h2{
+                font-size: 35px;
+                font-weight: 1200;
+               
         }
         
 

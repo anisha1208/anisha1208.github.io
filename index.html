@@ -7,21 +7,22 @@
         <title>Anisha's Portfolio</title>
         <link rel="icon" type="image/png" href="favicon.png"">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/path/to/box-shadows.min.css">
         <script src="script.js" defer></script>
         <script src="https://kit.fontawesome.com/6d3d513dad.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-     <header>
+     <header class="nav">
              <a href="#" class="logo">Portfolio</a>
              <div class="toggle" onclick="toggleMenu();"></div>
              <ul class="menu">
                      <li><a href="#home" onclick="toggleMenu();">HOME</a></li>
                      <li><a href="#about" onclick="toggleMenu();">ABOUT</a></li>
-                     <li><a href="#" onclick="toggleMenu();">SKILLS</a></li>
+                     <li><a href="#skills" onclick="toggleMenu();">SKILLS</a></li>
                      <li><a href="#projects" onclick="toggleMenu();">PROJECTS</a></li>
                      <li><a href="#activities" onclick="toggleMenu();">ACTIVITIES</a></li>
-                     <li><a href="#" onclick="toggleMenu();">CONTACT</a></li>
+                     <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
              </ul>
      </header>
      <section class="banner" id="home">
@@ -58,9 +59,9 @@
                         <br>
                         <br>
                         <ul class="info">
-                        <li><b>Name:</b>&ensp; &emsp; &emsp; &ensp; Anisha Agrawal </li>
-                        <li><b>Date of Birth:</b> &ensp; August 12, 2002</li>
-                        <li><b>College:</b> &ensp; &emsp; &emsp;International Institute of Information Technology (IIIT) Naya Raipur, India</li>
+                        <li><b>Full Name :</b>&ensp;&emsp; &ensp;Anisha Agrawal </li>
+                        <li><b>Date of Birth :</b> &ensp; August 12, 2002</li>
+                        <li><b>College :</b> &ensp; &emsp; &emsp;International Institute of Information Technology (IIIT) Naya Raipur, India</li>
                         </ul>
                         <br>
 
@@ -68,7 +69,7 @@
                 <br>
                 
              </div>
-
+<br><br>
              <div class="social">
                 <br>
                 <br>
@@ -82,11 +83,14 @@
                 <a href="./assets/Anisha_Resume.pdf" class="btn"  download>Download Resume</a>
              </div>
      </section>
-     <div class="heading">
+     <hr class="idk">
+     <br>
+     <div class="heading" id="about">
+             
         <h1>Education</h1>
      </div>
    
-     <section class="timeline">
+     <section class="timeline" id="about">
              
              
              <div class="wrapper">
@@ -125,7 +129,105 @@
                 
         </div>  
      </section>
+     
 
+     <section class="skills" id="skills">
+        <div class="heading">
+                <br>
+                <br>
+           <h2>My Skills</h2>
+           <p>Have a look at my expertise.</p>
+           </div>
+           <!-- <hr> -->
+           <br>
+           <br>
+        <div class="row">
+                <div class="item">
+                        <div class="in">
+                                <p>C/C++</p>
+                                <p class="w-80">80%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="cpp"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>Python</p>
+                                <p class="w-85">85%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="py"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>Java</p>
+                                <p class="w-65">65%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="java"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>Frontend - HTML, CSS, Bootstrap</p>
+                                <p class="w-90">90%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="html"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>Data Science, Machine Learning</p>
+                                <p class="w-85">85%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="ml"></span>
+                        </div>
+                </div>
+
+
+                <div class="item">
+                        <div class="in">
+                                <p>Databases - MySQL, Oracle</p>
+                                <p class="w-80">80%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="db"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>ML Libraries - OpenCV, Tensorflow, Keras</p>
+                                <p class="w-80">80%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="dl"></span>
+                        </div>
+                </div>
+
+                <div class="item">
+                        <div class="in">
+                                <p>Graphic Design: Adobe Illustrator, Photoshop</p>
+                                <p class="w-75">75%</p>
+                        </div>
+                        <div class="progress">
+                                <span class="gd"></span>
+                        </div>
+                </div>
+
+                
+
+                
+        </div>
+     </section>
 
      <section class="projects" id="projects">
              <div class="heading white">
@@ -176,6 +278,46 @@
      </section>
      <section class="activities" id="activities">
 
+     </section>
+
+     <section class="contact" id="contact">
+                <div class="heading">
+                        <h2>Contact Me</h2>
+                        <p>I'd Love To Connect With You.</p>
+                        
+                </div>
+        <div class="rows">
+                <div class="entry">
+                        <div class="icon">
+                                <i class="fa-solid fa-location-dot fa-3x"></i>
+                        </div>
+                        <br>
+                        <h4>Where to find me</h4>
+                        <p>Raipur, Chhattisgarh, India</p>
+                </div>
+
+                <div class="entry">
+                        <div class="icon">
+                                <i class="fa-solid fa-envelope fa-3x"></i>
+                        </div>
+                        <br>
+                        <h4>Email Me at</h4>
+                        <p>anishaagrawal1208@gmail.com</p>
+                        <p>anisha20100@iiitnr.edu.in</p>
+                </div>
+
+                <div class="entry">
+                        <div class="icon">
+                                <i class="fa-brands fa-linkedin-in fa-3x"></i>
+                        </div>
+                        <br>
+                        <h4>Let's Connect</h4>
+                        <a href="https://www.linkedin.com/in/anisha-agrawal-a72259202/" target="_blank">Profile</a>
+                        
+                </div>
+
+
+        </div>
      </section>
 
 </body>
