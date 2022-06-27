@@ -7,6 +7,7 @@
         box-sizing: border-box;
         font-family: 'Poppins',sans-serif;
         scroll-behavior: smooth;
+        
 }
 
 section{
@@ -163,6 +164,12 @@ header.sticky ul li a{
        
 }
 
+/* .about{
+        background-size: cover;
+        background-image: url('./img/whitebg.jpg');
+        background-position: center;
+} */
+
 .about .heading h2{
         text-shadow: 0 12px 6px #dcd9d4,0 -2px 1px #fff;
 }
@@ -272,6 +279,7 @@ header.sticky ul li a{
         height: 2px;
         border: none;
         margin-bottom: 20px;    
+        
 }
 
 .timeline h1{
@@ -280,6 +288,10 @@ header.sticky ul li a{
         text-align: center;
         /* margin-top: -80px;
         margin-bottom: 30px; */
+        background-size: cover;
+        background-image: url('./img/whitebg.jpg');
+        background-position: center;
+        
 }
 
 
@@ -290,9 +302,11 @@ header.sticky ul li a{
         align-items: center;
         justify-content: center;
         padding: 100px 0;
-        background-image: linear-gradient(to bottom, #ffffff, #f4f4f4, #e9e9e9, #dedede, #d3d3d3);
+        /* background-image: linear-gradient(to bottom, #ffffff, #f4f4f4, #e9e9e9, #dedede, #d3d3d3); */
         /* background-image: linear-gradient(to bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5); */
-        
+        background-size: cover;
+        background-image: url('./img/whitebg.jpg');
+        background-position: center;
         
 }
 
@@ -353,11 +367,12 @@ header.sticky ul li a{
 
 .skills{
         /* background-color: #157a99; */
-        background-image: linear-gradient(to bottom, #006274, #046c81, #0a778f, #11819d, #198cac);
+        background-image: linear-gradient(to bottom, #015969, #046c81, #0a778f, #11819d, #1b97b9);
         width: 100%;
         height: auto;
         padding: 80px 13%;
         /* background-color: rgba(0,0,0,0.080); */
+        
 }
 /* .skills .heading h2{
         text-shadow: 0 10px 6px #525a6d,0 -2px 1px rgb(107, 107, 107);
@@ -559,8 +574,10 @@ header.sticky ul li a{
 }
 
 .projects .content .pbox h3{
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
 }
 
 .pbox .ic a{
@@ -579,6 +596,74 @@ header.sticky ul li a{
 }
 
 .pbox .ic a:hover{
+        color:#000000;
+}
+
+.activities .a-content{
+        /* display: flex; */
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+}
+.activities .a-content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+}
+
+.activities .a-content .abox{
+        padding: 20px 20px;
+        background-color: #146486;
+        color: #fff;
+        /* width: 25%;
+        height: 175px; */
+        max-height: 400px;
+        max-width: 900px;
+        margin: 20px;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 15px;
+        box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.111),
+                15px 15px 15px rgba(0,0,0,0.1);
+                inset: -50px -50px 50px rgba(255, 255, 255, 0.2),
+                inset 50px 50px 50px rgba(0,0,0,0.1);
+}
+
+.activities .a-content .abox:hover{
+        background-color: #000000;
+
+}
+
+.activities .a-content .abox img{
+        max-width: 80px;
+}
+
+.activities .a-content .abox h4{
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+}
+
+.abox .ic a{
+        width:25px;
+        height:25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        /* margin-right: 20px; */
+        border-radius: 50%;
+        /* margin-left: 30px; */
+        margin: 5px;
+}
+
+.abox .ic a:hover{
         color:#000000;
 }
 
@@ -752,6 +837,9 @@ header.sticky ul li a{
         }
 
         .projects .content .pbox{
+                margin: 10px;
+        }
+        .activities .a-content .abox{
                 margin: 10px;
         }
 
