@@ -17,3 +17,41 @@ var typed = new Typed(".autotype",{
         backSpeed:100,
         loop:true
 })
+
+var swiper = new Swiper('.scontent', {
+        // Optional parameters
+        slidesPerView : 2,
+        spaceBetween: 30,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        loop: true,
+        loopFillGroupWithBlank: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable:true,
+          dynamicBullets: 'true',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints:{
+                0:{
+                        slidesPerView:1,
+                },
+                520:{
+                        slidesPerView:2,
+                },
+
+                950:{
+                        slidesPerView:2,
+                }
+        }
+      
+      });

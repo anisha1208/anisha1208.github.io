@@ -146,9 +146,9 @@ header.sticky ul li a{
 }
 
 .nav li.active a{
-        color: rgb(38, 125, 132);
-      }
-      
+        color: rgb(29, 99, 104);
+        background-color: #046c81;
+}
 
 .heading{
         width: 100%;
@@ -667,8 +667,89 @@ header.sticky ul li a{
         color:#000000;
 }
 
+.slider{
+        max-width: 1120px;
+        width: 100%;
+        padding: 40px 0px;
+}
+
+.scontent{
+        margin: 40px;
+        overflow: hidden;
+}
+
+.card{
+        border-radius: 20px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        /* width: 320px; */
+}
+
+.cardc{
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+}
+.title{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px;
+}
+
+.cardc p{
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px; 
+}
+
+.cardc a{
+        color: #0a778f;
+}
+
+.cardc a:hover{
+        color: #fff;
+}
+
+.points{
+        padding: 10px;
+        color:rgb(175, 173, 173);
+        margin: auto;
+        width: 92%;
+}
+.points li{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.sbtn{
+        color: #000000;
+        transition: color 0.3s ease;
+
+}
+
+.sbtn:hover{
+        color: #015969;
+        
+}
+
+.swiper-pagination-bullet{
+        background-color: #11819d;
+        opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+        background-color: #000000;
+}
+
+
+
 .contact{
-   background-color: rgba(0,0,0,0.080);     
+   background-color: rgba(0,0,0,0.080);
+   max-height: 68vh;     
 }
 
 .contact .rows{
