@@ -433,7 +433,7 @@ header.sticky ul li a{
 }
 
 .progress .py{
-        width:85%;
+        width:90%;
         animation: py 3s;
 }
 
@@ -442,7 +442,7 @@ header.sticky ul li a{
                 width:0;
         }
         100%{
-                width: 85%;
+                width: 90%;
         }
 }
 
