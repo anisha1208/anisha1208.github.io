@@ -530,6 +530,91 @@ header.sticky ul li a{
         }
 }
 
+/* Timeline container */
+.exp-timeline {
+        position: relative;
+        max-width: 800px; 
+        margin: 0 auto;
+        padding: 20px;
+}
+
+.exp-timeline::after {
+        content: "";
+        background-color:#aeadad; 
+        width: 2px;
+        height: 100%;
+        top: 0; 
+        left: 5%; 
+        transform: translateX(-50%);
+        position: absolute;
+}
+
+.timeline-event {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #fff; 
+        left: 10%;
+}
+
+.timeline-event::before {
+        content: "";
+        position: absolute;
+        background-color:#046c81; 
+        width: 30px; 
+        height: 1px; 
+        border-radius: 50%; /* Make dot circular */
+        left: -55px; 
+        top: 50%;
+        transform: translateY(-50%); 
+        z-index: 1; 
+}
+
+.timeline-event:last-child::after {
+        display: none;
+}
+
+.company-details {
+        display: flex;
+        align-items: center;
+}
+
+.company-logo {
+        width: 50px; 
+        height: 50px;
+        margin: 15px;
+
+}
+
+.company-name {
+        color: #000000;
+}
+
+.timeline-event-content {
+        margin-left: 10px;
+}
+
+.timeline-event-title {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        color: #015969;
+}
+
+.timeline-event-date {
+        color: #ccc;
+        font-size: 0.9em;
+        font-family: 'opensans-regular', sans-serif;
+        margin-bottom: 25px;
+}
+
+.timeline-event-description {
+        line-height: 1.5;
+        font-family: 'opensans-regular', sans-serif;
+
+}
+
+
+
 .projects{
         background: black;
 }
